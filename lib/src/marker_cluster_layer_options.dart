@@ -190,6 +190,9 @@ class MarkerClusterLayerOptions {
   /// Popup's options that show when tapping markers or via the PopupController.
   final PopupOptions? popupOptions;
 
+  /// Filtering instead of clustering.
+  final bool filterMarkers: false,
+
   MarkerClusterLayerOptions({
     required this.builder,
     this.rotate,
@@ -218,5 +221,6 @@ class MarkerClusterLayerOptions {
     this.onClusterTap,
     this.onMarkersClustered,
     this.popupOptions,
+    this.filterMarkers,
   });
 }
